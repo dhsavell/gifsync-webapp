@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Gifsync</title>
+    <% if (process.env.ADSENSE) { %>
+      <script
+        data-ad-client="<%= process.env.ADSENSE %>"
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      ></script>
+    <% } %>
   </head>
 
   <body>
     <div id="elm"></div>
-    <script src="main.js"></script>
   </body>
 </html>

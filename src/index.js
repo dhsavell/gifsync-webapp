@@ -1,4 +1,3 @@
-require("./index.html");
 import css from "./style.css";
 
 const Elm = require("./Main.elm").Elm;
